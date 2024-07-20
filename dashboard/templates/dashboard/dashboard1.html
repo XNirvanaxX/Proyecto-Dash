@@ -1,0 +1,40 @@
+{% extends 'dashboard/base.html' %}
+
+{% block title %}Dashboard 1{% endblock %}
+
+{% block content %}
+<div class="graph-container">
+    <h2>Dashboard 1 - Evolución Mensual de Ventas (Total) - Interpolación Polinomial Orden 2</h2>
+    <div>
+        <label for="fecha_inicio">Fecha de inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" value="{{ fecha_inicio }}" min="{{ fecha_minima }}" max="{{ fecha_maxima }}">
+        <label for="fecha_fin">Fecha de fin:</label>
+        <input type="date" id="fecha_fin" name="fecha_fin" value="{{ fecha_fin }}" min="{{ fecha_minima }}" max="{{ fecha_maxima }}">
+        <button id="boton_actualizar">Actualizar</button>
+    </div>
+    <div id="grafico_interpolado">{{ grafico_interpolado|safe }}</div>
+</div>
+<div class="graph-container">
+    <h2>Datos Originales</h2>
+    <div>{{ grafico_original|safe }}</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $('#boton_actualizar').on('click', function() {
+        var fecha_inicio = $('#fecha_inicio').val();
+        var fecha_fin = $('#fecha_fin').val();
+        $.ajax({
+            url: "{% url 'actualizar_dashboard1' %}",
+            data: {
+                'fecha_inicio': fecha_inicio,
+                'fecha_fin': fecha_fin
+            },
+            success: function(data) {
+                $('#grafico_interpolado').html(data.grafico_interpolado);
+            }
+        });
+    });
+</script>
+{% endblock %}
+

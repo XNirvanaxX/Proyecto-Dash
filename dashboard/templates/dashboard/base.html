@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+    {% load static %}  <!-- Cargar el módulo static -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Supermercado Dashboard</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'dashboard1' %}">Dashboard 1</a></li>
+                    <li><a href="{% url 'dashboard2' %}">Dashboard 2</a></li>
+                    <li><a href="{% url 'dashboard3' %}">Dashboard 3</a></li>
+                    <li><a href="{% url 'dashboard4' %}">Dashboard 4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
