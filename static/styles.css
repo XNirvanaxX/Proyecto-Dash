@@ -1,61 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-}
-
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-}
-
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header #branding {
-    float: left;
-}
-
-header #branding h1 {
-    margin: 0;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-.graph-container {
-    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
     padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
-.graph-container h2 {
+.header h2, .header h3, .header h4 {
+    margin: 10px 0;
+    color: #343a40;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #007bff;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.integrantes p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+header, footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
     text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
 }

@@ -2,6 +2,43 @@
 
 {% block title %}Presentación{% endblock %}
 
+{% block extra_styles %}
+<style>
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .header h2, .header h3, .header h4 {
+        margin: 10px 0;
+        color: #343a40;
+    }
+
+    .content h1 {
+        font-size: 2.5em;
+        margin: 20px 0;
+        color: #007bff;
+    }
+
+    .content p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+
+    .integrantes p {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="container">
     <div class="header">

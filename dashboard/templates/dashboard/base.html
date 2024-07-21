@@ -1,31 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Dashboard{% endblock %}</title>
-    {% load static %}  <!-- Cargar el módulo static -->
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>{% block title %}Mi Proyecto{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        /* Estilos básicos para el proyecto */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    {% block extra_styles %}{% endblock %}
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Supermercado Dashboard</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="{% url 'dashboard1' %}">Dashboard 1</a></li>
-                    <li><a href="{% url 'dashboard2' %}">Dashboard 2</a></li>
-                    <li><a href="{% url 'dashboard3' %}">Dashboard 3</a></li>
-                    <li><a href="{% url 'dashboard4' %}">Dashboard 4</a></li>
-                    <li><a href="{% url 'presentacion' %}">Presentacion</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>SuperMercado Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'dashboard1' %}">Dashboard 1</a></li>
+                <li><a href="{% url 'dashboard2' %}">Dashboard 2</a></li>
+                <li><a href="{% url 'dashboard3' %}">Dashboard 3</a></li>
+                <li><a href="{% url 'dashboard4' %}">Dashboard 4</a></li>
+                <li><a href="{% url 'presentacion' %}">Presentación</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
+    <main>
         {% block content %}{% endblock %}
-    </div>
+    </main>
 </body>
 </html>
