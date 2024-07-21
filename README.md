@@ -51,35 +51,36 @@ Este proyecto es una aplicación web de Django que permite visualizar y analizar
 
 ## Estructura del Proyecto
 
+```plaintext
 myproject/
 ├── dashboard/
-│ ├── data/
-│ │ └── ventas-supermercados-base-1996-evolucion-articulos-por-grupos-base-2008-mensuales.csv
-│ ├── migrations/
-│ ├── static/
-│ │ └── css/
-│ │ └── styles.css
-│ ├── templates/
-│ │ └── dashboard/
-│ │ ├── base.html
-│ │ ├── dashboard1.html
-│ │ ├── dashboard2.html
-│ │ ├── dashboard3.html
-│ │ ├── dashboard4.html
-│ │ └── presentacion.html
-│ ├── init.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── tests.py
-│ ├── urls.py
-│ └── views.py
+│   ├── data/
+│   │   └── ventas-supermercados-base-1996-evolucion-articulos-por-grupos-base-2008-mensuales.csv
+│   ├── migrations/
+│   ├── static/
+│   │   └── css/
+│   │       └── styles.css
+│   ├── templates/
+│   │   └── dashboard/
+│   │       ├── base.html
+│   │       ├── dashboard1.html
+│   │       ├── dashboard2.html
+│   │       ├── dashboard3.html
+│   │       ├── dashboard4.html
+│   │       └── presentacion.html
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
 ├── myproject/
-│ ├── init.py
-│ ├── asgi.py
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
 ├── manage.py
 └── requirements.txt
 
