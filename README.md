@@ -84,13 +84,15 @@ myproject/
 ├── manage.py
 └── requirements.txt
 
+ ```
 ## Uso
 
-- Navega a `http://localhost:8000/dashboard1/` para ver el Dashboard 1.
-- Navega a `http://localhost:8000/dashboard2/` para ver el Dashboard 2.
-- Navega a `http://localhost:8000/dashboard3/` para ver el Dashboard 3.
-- Navega a `http://localhost:8000/dashboard4/` para ver el Dashboard 4.
-- Navega a `http://localhost:8000/presentacion/` para ver la página de presentación.
+    - Navega a `http://localhost:8000/dashboard1/` para ver el Dashboard 1.
+    - Navega a `http://localhost:8000/dashboard2/` para ver el Dashboard 2.
+    - Navega a `http://localhost:8000/dashboard3/` para ver el Dashboard 3.
+    - Navega a `http://localhost:8000/dashboard4/` para ver el Dashboard 4.
+    - Navega a `http://localhost:8000/presentacion/` para ver la página de presentación.
+     
 
 En cada dashboard, puedes seleccionar un rango de fechas y hacer clic en "Actualizar" para ver los datos filtrados y actualizados.
 
