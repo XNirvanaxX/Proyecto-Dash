@@ -51,3 +51,51 @@ Este proyecto es una aplicación web de Django que permite visualizar y analizar
 
 ## Estructura del Proyecto
 
+myproject/
+├── dashboard/
+│ ├── data/
+│ │ └── ventas-supermercados-base-1996-evolucion-articulos-por-grupos-base-2008-mensuales.csv
+│ ├── migrations/
+│ ├── static/
+│ │ └── css/
+│ │ └── styles.css
+│ ├── templates/
+│ │ └── dashboard/
+│ │ ├── base.html
+│ │ ├── dashboard1.html
+│ │ ├── dashboard2.html
+│ │ ├── dashboard3.html
+│ │ ├── dashboard4.html
+│ │ └── presentacion.html
+│ ├── init.py
+│ ├── admin.py
+│ ├── apps.py
+│ ├── models.py
+│ ├── tests.py
+│ ├── urls.py
+│ └── views.py
+├── myproject/
+│ ├── init.py
+│ ├── asgi.py
+│ ├── settings.py
+│ ├── urls.py
+│ └── wsgi.py
+├── manage.py
+└── requirements.txt
+
+## Uso
+
+- Navega a `http://localhost:8000/dashboard1/` para ver el Dashboard 1.
+- Navega a `http://localhost:8000/dashboard2/` para ver el Dashboard 2.
+- Navega a `http://localhost:8000/dashboard3/` para ver el Dashboard 3.
+- Navega a `http://localhost:8000/dashboard4/` para ver el Dashboard 4.
+- Navega a `http://localhost:8000/presentacion/` para ver la página de presentación.
+
+En cada dashboard, puedes seleccionar un rango de fechas y hacer clic en "Actualizar" para ver los datos filtrados y actualizados.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para discutir cualquier cambio que te gustaría hacer.
+
+
+
