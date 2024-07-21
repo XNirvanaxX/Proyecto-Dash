@@ -16,6 +16,10 @@ def introducir_nans(df, fraccion_nan=0.1):
     df[mascara] = np.nan
     return df
 
+def vista_presentacion(request):
+    return render(request, 'dashboard/presentacion.html')
+
+
 def vista_inicio(request):
     return redirect('dashboard1')
 
